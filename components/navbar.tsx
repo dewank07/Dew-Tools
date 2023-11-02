@@ -14,6 +14,7 @@ import {
   SheetHeader,
   SheetTitle,
   SheetTrigger,
+  SheetClose,
 } from "@/components/ui/sheet";
 import {
   DropdownMenu,
@@ -21,9 +22,13 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
 
 export default function Navbar({}): any {
+  const [open, setOpen] = useState(false);
   const { setTheme } = useTheme();
+
   return (
     <nav className='w-full backdrop-blur-md bg-white dark:bg-gray-900 bg-opacity-30 z-50 fixed h-24 flex justify-between items-center py-10 px-4 md:px-8 lg:px-12 xl:px-16 2xl:px-24'>
       <Link
@@ -95,21 +100,36 @@ export default function Navbar({}): any {
         <SheetContent>
           <SheetHeader>
             <SheetDescription>
-              <div className='w-full space-y-3 flex flex-col gap-8'>
-                <Button variant='ghost' className='font-semibold text-md'>
-                  <Link href='/'>Home</Link>
-                </Button>
+              <div className='w-full space-y-8 flex flex-col gap-8'>
+                <SheetClose asChild>
+                  <Button variant='ghost' className='font-semibold text-md'>
+                    <SheetClose asChild>
+                      <Link href='/'>Home</Link>
+                    </SheetClose>
+                  </Button>
+                </SheetClose>
 
-                <Button variant='ghost' className='font-semibold text-md'>
-                  <Link href='/converter'>Converter</Link>
-                </Button>
-
-                <Button variant='ghost' className='font-semibold text-md'>
-                  <Link href='/scanner'>Scanner</Link>
-                </Button>
-                <Button variant='ghost' className='font-semibold text-md'>
-                  <Link href='/qrmaker'>QR Generator</Link>
-                </Button>
+                <SheetClose asChild>
+                  <Button variant='ghost' className='font-semibold text-md'>
+                    <SheetClose asChild>
+                      <Link href='/converter'>Converter</Link>
+                    </SheetClose>
+                  </Button>
+                </SheetClose>
+                <SheetClose asChild>
+                  <Button variant='ghost' className='font-semibold text-md'>
+                    <SheetClose asChild>
+                      <Link href='/scanner'>Scanner</Link>
+                    </SheetClose>
+                  </Button>
+                </SheetClose>
+                <SheetClose asChild>
+                  <Button variant='ghost' className='font-semibold text-md'>
+                    <SheetClose asChild>
+                      <Link href='/qrmaker'>QR Generator</Link>
+                    </SheetClose>
+                  </Button>
+                </SheetClose>
               </div>
             </SheetDescription>
           </SheetHeader>
