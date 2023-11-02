@@ -95,7 +95,7 @@ export default function Navbar({}): any {
         <SheetContent>
           <SheetHeader>
             <SheetDescription>
-              <div className='w-full space-y-3'>
+              <div className='w-full space-y-3 flex flex-col gap-8'>
                 <Button variant='ghost' className='font-semibold text-md'>
                   <Link href='/'>Home</Link>
                 </Button>
