@@ -38,21 +38,17 @@ export default function Navbar({}): any {
         <Button variant='ghost' className='font-semibold text-md'>
           <Link href='/'>Home</Link>
         </Button>
-        <Link href='/converter'>
-          <Button variant='ghost' className='font-semibold text-md'>
-            Converter
-          </Button>
-        </Link>
-        <Link href='/scanner'>
-          <Button variant='ghost' className='font-semibold text-md'>
-            Scanner
-          </Button>
-        </Link>
-        <Link href='/qrmaker'>
-          <Button variant='ghost' className='font-semibold text-md'>
-            QR Generator
-          </Button>
-        </Link>
+
+        <Button variant='ghost' className='font-semibold text-md'>
+          <Link href='/converter'>Converter</Link>
+        </Button>
+
+        <Button variant='ghost' className='font-semibold text-md'>
+          <Link href='/scanner'>Scanner</Link>
+        </Button>
+        <Button variant='ghost' className='font-semibold text-md'>
+          <Link href='/qrmaker'>QR Generator</Link>
+        </Button>
       </div>
       <div className='gap-1 hidden md:flex md:gap-2 lg:gap-4 '>
         <Link href='https://github.com/dewank07'>
@@ -100,30 +96,20 @@ export default function Navbar({}): any {
           <SheetHeader>
             <SheetDescription>
               <div className='w-full space-y-3'>
-                <Link href='/'>
-                  <Button
-                    variant='link'
-                    className='font-semibold text-md w-full'
-                  >
-                    Home
-                  </Button>
-                </Link>
-                <Link href='/about'>
-                  <Button
-                    variant='link'
-                    className='font-semibold text-md w-full'
-                  >
-                    About
-                  </Button>
-                </Link>
-                <Link href='/privacy-policy'>
-                  <Button
-                    variant='link'
-                    className='font-semibold text-md w-full'
-                  >
-                    Privacy Policy
-                  </Button>
-                </Link>
+                <Button variant='ghost' className='font-semibold text-md'>
+                  <Link href='/'>Home</Link>
+                </Button>
+
+                <Button variant='ghost' className='font-semibold text-md'>
+                  <Link href='/converter'>Converter</Link>
+                </Button>
+
+                <Button variant='ghost' className='font-semibold text-md'>
+                  <Link href='/scanner'>Scanner</Link>
+                </Button>
+                <Button variant='ghost' className='font-semibold text-md'>
+                  <Link href='/qrmaker'>QR Generator</Link>
+                </Button>
               </div>
             </SheetDescription>
           </SheetHeader>
