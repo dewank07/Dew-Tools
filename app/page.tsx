@@ -1,24 +1,20 @@
 // imports
-import Dropzone from '@/components/dropzone';
+import Dropzone from "@/components/dropzone";
 
 export default function Home() {
   return (
-    <div className="space-y-16 pb-8">
+    <div className='space-y-30 pb-8 h-[80vh] flex items-center justify-center'>
       {/* Title + Desc */}
-      <div className="space-y-6">
-        <h1 className="text-3xl md:text-5xl font-medium text-center">
-          Free Unlimited File Converter
+      <div className='space-y-6'>
+        <h1 className='text-3xl md:text-5xl font-medium text-center'>
+          Make your <span className='text-orange-600'>productivity</span> 100x.
         </h1>
-        <p className="text-gray-400 text-md md:text-lg text-center md:px-24 xl:px-44 2xl:px-52">
-          Unleash your creativity with Modifio – the ultimate online tool for
-          unlimited and free multimedia conversion. Transform images, audio, and
-          videos effortlessly, without restrictions. Start converting now and
-          elevate your content like never before!
+        <p className='text-gray-400 text-md md:text-lg text-center md:px-24 xl:px-44 2xl:px-52'>
+          Unleash your productivity with Dew Tool – the ultimate online tools
+          for unlimited and free multimedia conversion, QR scanning and QR
+          generator. Many more updates soon.
         </p>
       </div>
-
-      {/* Upload Box */}
-      <Dropzone />
     </div>
   );
 }
