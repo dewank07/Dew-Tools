@@ -28,7 +28,12 @@ export default function RootLayout({
       <ClerkProvider>
         <html lang='en'>
           <body className={inter.className}>
-            <ThemeProvider defaultTheme='system' enableSystem>
+            <ThemeProvider
+              attribute='class'
+              defaultTheme='system'
+              enableSystem
+              disableTransitionOnChange
+            >
               <Navbar />
               <Toaster />
               <div className='pt-24 min-h-screen lg:pt-24 2xl:pt-32 container max-w-4xl lg:max-w-6xl 2xl:max-w-7xl'>

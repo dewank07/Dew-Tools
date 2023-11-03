@@ -52,6 +52,9 @@ export default function Navbar({}): any {
         <Button variant='ghost' className='font-semibold text-md'>
           <Link href='/qrmaker'>QR Generator</Link>
         </Button>
+        <Button variant='ghost' className='font-semibold text-md'>
+          <Link href='/notion'>Note-ion</Link>
+        </Button>
       </div>
       <div className='gap-1 hidden md:flex md:gap-2 lg:gap-4 '>
         <Link href='https://github.com/dewank07'>

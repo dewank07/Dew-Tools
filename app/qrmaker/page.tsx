@@ -34,7 +34,7 @@ export default function QrGenerator() {
       <h1 className='text-4xl font-semibold font-sans'>Generate your QR</h1>
       <QRCode1 value={valueInput} id='qrCodeDown' />
       <input
-        className='border-slate-950 border rounded-md h-10 w-72 font-medium p-4'
+        className='border-slate-950 border rounded-md h-10 w-72 font-medium p-4  dark:text-white'
         value={valueInput}
         onChange={(e) => {
           handleChange(e);
