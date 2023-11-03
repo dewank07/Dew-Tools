@@ -1,12 +1,12 @@
 "use client";
 // imports
-import Image from "next/image";
 import { Button } from "./ui/button";
 import Link from "next/link";
 import { BsGithub } from "react-icons/bs";
 import { GrMenu } from "react-icons/gr";
 import { MoonIcon, SunIcon } from "@radix-ui/react-icons";
 import { useTheme } from "next-themes";
+import { UserButton } from "@clerk/nextjs";
 import {
   Sheet,
   SheetContent,
@@ -22,11 +22,9 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 
 export default function Navbar({}): any {
-  const [open, setOpen] = useState(false);
   const { setTheme } = useTheme();
 
   return (
@@ -88,6 +86,7 @@ export default function Navbar({}): any {
             </DropdownMenuItem>
           </DropdownMenuContent>
         </DropdownMenu>
+        <UserButton afterSignOutUrl='/' />
       </div>
 
       {/* MOBILE NAV */}
