@@ -14,7 +14,7 @@ const Scan = () => {
   };
 
   return (
-    <div className='flex flex-col gap-4 py-2 justify-center max-w-screen'>
+    <div className='flex flex-col gap-16 py-2 justify-center max-w-screen'>
       <div className='flex flex-col gap-8 items-center'>
         <div>
           <Html5QrcodePlugin
@@ -25,7 +25,7 @@ const Scan = () => {
           />
         </div>
       </div>
-      <div className='flex items-center justify-center gap-4'>
+      <div className='flex items-center justify-center gap-4 '>
         <Input id='link' defaultValue={data} readOnly />
         <Button
           variant='default'
