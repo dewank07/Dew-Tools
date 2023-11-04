@@ -38,7 +38,7 @@ export default function RootLayout({
               <Provider>
                 <Navbar />
                 <Toaster />
-                <div className='pt-24 min-h-screen lg:pt-24 2xl:pt-32 container max-w-4xl lg:max-w-6xl 2xl:max-w-7xl'>
+                <div className='pt-32 min-h-screen lg:pt-32 2xl:pt-36 container max-w-4xl lg:max-w-6xl 2xl:max-w-7xl'>
                   {children}
                 </div>
               </Provider>
