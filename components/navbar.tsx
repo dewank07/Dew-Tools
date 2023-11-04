@@ -6,13 +6,11 @@ import { BsGithub } from "react-icons/bs";
 import { GrMenu } from "react-icons/gr";
 import { MoonIcon, SunIcon } from "@radix-ui/react-icons";
 import { useTheme } from "next-themes";
-import { UserButton } from "@clerk/nextjs";
 import {
   Sheet,
   SheetContent,
   SheetDescription,
   SheetHeader,
-  SheetTitle,
   SheetTrigger,
   SheetClose,
 } from "@/components/ui/sheet";
@@ -22,7 +20,6 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { useEffect, useState } from "react";
 
 export default function Navbar({}): any {
   const { setTheme } = useTheme();
@@ -89,7 +86,6 @@ export default function Navbar({}): any {
             </DropdownMenuItem>
           </DropdownMenuContent>
         </DropdownMenu>
-        <UserButton afterSignOutUrl='/' />
       </div>
 
       {/* MOBILE NAV */}

@@ -5,6 +5,7 @@ import Navbar from "@/components/navbar";
 import { Toaster } from "@/components/ui/toaster";
 import { ThemeProvider } from "@/components/theme-provider";
 import { ClerkProvider } from "@clerk/nextjs";
+import Provider from "@/components/Provider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -34,11 +35,13 @@ export default function RootLayout({
               enableSystem
               disableTransitionOnChange
             >
-              <Navbar />
-              <Toaster />
-              <div className='pt-24 min-h-screen lg:pt-24 2xl:pt-32 container max-w-4xl lg:max-w-6xl 2xl:max-w-7xl'>
-                {children}
-              </div>
+              <Provider>
+                <Navbar />
+                <Toaster />
+                <div className='pt-24 min-h-screen lg:pt-24 2xl:pt-32 container max-w-4xl lg:max-w-6xl 2xl:max-w-7xl'>
+                  {children}
+                </div>
+              </Provider>
             </ThemeProvider>
           </body>
         </html>

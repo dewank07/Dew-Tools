@@ -1,5 +1,4 @@
 // imports
-import Dropzone from "@/components/dropzone";
 import TypeWriterTitle from "@/components/ui/TypeWriterTitle";
 
 export default function Home() {
