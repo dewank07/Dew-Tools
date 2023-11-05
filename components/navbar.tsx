@@ -3,7 +3,7 @@
 import { Button } from "./ui/button";
 import Link from "next/link";
 import { BsGithub } from "react-icons/bs";
-import { GrMenu } from "react-icons/gr";
+import { HiMenuAlt2 } from "react-icons/hi";
 import { MoonIcon, SunIcon } from "@radix-ui/react-icons";
 import { useTheme } from "next-themes";
 import {
@@ -35,23 +35,31 @@ export default function Navbar({}): any {
         </div>
       </Link>
       <div className='gap-1 hidden md:flex md:gap-2 lg:gap-4 '>
-        <Button variant='ghost' className='font-semibold text-md'>
-          <Link href='/'>Home</Link>
-        </Button>
-
-        <Button variant='ghost' className='font-semibold text-md'>
-          <Link href='/converter'>Converter</Link>
-        </Button>
-
-        <Button variant='ghost' className='font-semibold text-md'>
-          <Link href='/scanner'>Scanner</Link>
-        </Button>
-        <Button variant='ghost' className='font-semibold text-md'>
-          <Link href='/qrmaker'>QR Generator</Link>
-        </Button>
-        <Button variant='ghost' className='font-semibold text-md'>
-          <Link href='/notion'>Note-ion</Link>
-        </Button>
+        <Link href='/'>
+          <Button variant='ghost' className='font-semibold text-md'>
+            Home
+          </Button>
+        </Link>
+        <Link href='/converter'>
+          <Button variant='ghost' className='font-semibold text-md'>
+            Converter
+          </Button>
+        </Link>
+        <Link href='/scanner'>
+          <Button variant='ghost' className='font-semibold text-md'>
+            Scanner
+          </Button>
+        </Link>
+        <Link href='/qrmaker'>
+          <Button variant='ghost' className='font-semibold text-md'>
+            QR Generator
+          </Button>
+        </Link>
+        <Link href='/notion'>
+          <Button variant='ghost' className='font-semibold text-md'>
+            Note-ion
+          </Button>
+        </Link>
       </div>
       <div className='gap-1 hidden md:flex md:gap-2 lg:gap-4 '>
         <Link href='https://github.com/dewank07'>
@@ -91,8 +99,8 @@ export default function Navbar({}): any {
       {/* MOBILE NAV */}
       <Sheet>
         <SheetTrigger className='block md:hidden p-3'>
-          <span className='text-2xl'>
-            <GrMenu />
+          <span className='text-3xl text-orange-500'>
+            <HiMenuAlt2 />
           </span>
         </SheetTrigger>
         <SheetContent>
