@@ -68,7 +68,7 @@ export default function Navbar({}): any {
             className='rounded-full w-fit bg-orange-600 gap-2 items-center hidden md:flex '
             size='lg'
           >
-            <span>Know the Authour</span>
+            <span>Know the Author</span>
             <span className='text-xl'>
               <BsGithub />
             </span>
