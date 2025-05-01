@@ -58,7 +58,7 @@ To run Dew Tools on your local machine, follow these steps:
 
 ## **Deployed Project**
 
-You can access the deployed Dew Tools web app at [[dew-tools.vercel.app](https://dew-tools.vercel.app/)].
+You can access the deployed Dew Tools web app at [[https://https://dew-tools.vercel.app/](https://dew-tools.vercel.app/)].
 
 ## **Future Scope**
 
